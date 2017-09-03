@@ -1,14 +1,12 @@
 const mongoose = require('mongoose')
 mongoose.Promise = require('bluebird')
 
-let mlabLocation = 'mongodb://boazblake:boazblake@ds159493.mlab.com:59493/shindigit_v1' //'mongodb://localhost/'+ projectName'
-
 
 
 module.exports = {
    connectToDB: function(projectName){
       console.log('running db-setup')
-      let dbLocation = 'mongodb://boazblake:boazblake@ds159493.mlab.com:59493/shindigit_v1'
+      let dbLocation = 'mongodb://romedog:romedogBB79!@ds115214.mlab.com:15214/base_proxy'//'mongodb://localhost/'+ projectName'
 
       if (process.env.NODE_ENV === "development"){
         //dbLocation += "_dev"

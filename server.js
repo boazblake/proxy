@@ -1,4 +1,4 @@
-const PROJECT_NAME = 'shinDB'
+const PROJECT_NAME = 'base_proxy'
 
 // x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x
 
@@ -16,10 +16,7 @@ const appAuthentication = require('./config/auth.js')
 const connectToDB = require('./config/db-setup.js').connectToDB
 
 // Import Routers
-const attendanceRouter = require('./routes/v1/attendance.js')
 const authRouter = require('./routes/v1/auth.js')
-const eventRouter = require('./routes/v1/event.js')
-const eventDetailRouter = require('./routes/v1/eventDetail.js')
 const itemRouter = require('./routes/v1/item.js')
 const userDetailRouter = require('./routes/v1/userDetail.js')
 const userRouter = require('./routes/v1/user.js')
